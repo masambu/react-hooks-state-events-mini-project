@@ -12,7 +12,7 @@ test("displays the task category", () => {
   render(<Task text={"text!"} category={"category!"} />);
   expect(screen.queryByText("category!")).toBeInTheDocument();
 });
-
+ 
 test("is removed from the list when the delete button is clicked", () => {
   render(<App />);
   const task = screen.queryByText(/Buy rice/);
